@@ -1,0 +1,188 @@
+@media (min-width: 500px) {
+  body {
+    font-size: 20px;
+  }
+  }
+@media (min-width: 1000px) {
+  body {
+  font-size: 30px;
+  }
+}
+body {
+  background-color: gray;
+  font-family: 'Times New Roman', Times, serif;
+  display: flex;
+  flex-direction: column;
+}
+/* -------------------------- body > .top_menu (div) --------------------------- */
+.top-menu {
+  order: 0; 
+  display: flex;
+  background-color: aliceblue;
+}
+
+/* body > .top_menu > .unordered-list (ul) */
+.unordered-list {
+  display: flex; 
+  gap: 40px;
+  list-style: none;
+  text-decoration: none;
+  /* background-color: aqua; */
+
+  flex-basis: 100%; /*This will extend the width to the width of the screen*/
+  justify-content: center; /* if flex-basis is not define, this won't work.*/
+}
+/* 
+.list-items {
+  color: black;
+} */
+
+.top-menu a {
+  text-decoration:none;
+  color: black;
+}
+
+#learning-menu:hover .drop-down-menu{
+  display: flex;
+  flex-direction: column;
+}
+
+.drop-down-menu {
+  padding: 10px;
+  display: none;
+  background-color: aliceblue;
+  position: absolute;
+  min-width: fit-content;
+  z-index: 1;
+}
+
+.drop-down-menu > a {
+  color: red;
+  padding-top: 15px;
+}
+
+
+.drop-down-menu a:hover {
+  background-color: aliceblue;
+}
+
+/* -------------------------- body > .content-box (div) --------------------------- */
+.content-box {
+  padding: 5%;
+  background-color: black;
+  order: 1;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.python-logo {
+  order: 0;
+  /* background-color: red; */
+  width: 40%;
+  max-width: 400px;
+}
+
+.python-logo img{
+  width: 100%;
+}
+.introduction-div {
+  order: 1;
+  width: 90%;
+}
+
+.introduction-div > .introduction-par {
+  /* background-color: red; */
+  order: 1;
+  font-family: 'Courier New', Courier, monospace;
+  text-align: justify;
+  line-height: 150%;
+  color: white; /* text color */
+}
+
+.normal-button {
+  background-color:  darkblue;
+  padding: 2% 3%;
+  width: fit-content;
+  border-radius: 20px;
+  text-align: center;
+  order: 2;
+}
+
+.normal-button > button {
+  background-color: transparent;
+  border-style: unset;
+  font-size: 100%;
+  color: white; 
+}
+
+/* -------------------------- body > subscription-box (div) --------------------------- */
+
+.subscription-box {
+  padding: 40px;
+  order: 2;
+  background-color: aliceblue;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  align-items: stretch;
+}
+
+.sub-box {
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(180, 180, 180, 0.5);
+  border-radius: 10px;
+  padding: 20px 20px;
+  flex-basis: 300px;
+  flex-shrink: 0;
+}
+
+.sub-box > div {
+  padding: 10px;
+}
+
+.sub-price {
+  align-self: center;
+  margin-bottom: 18px;
+  border-bottom: 2px double olivedrab;
+  font-size: 40px;
+  font-weight:bold;
+}
+
+.sub-level {
+  font-size: 25px;
+  font-weight:bold;
+  padding: 0px;
+}
+
+.sub-button {
+  width: 50%;
+  align-self: center;
+  min-width: fit-content;
+}  
+
+.sub-features {
+  font-size: 20px;
+}
+.sub-button > button {
+  font-size: 20px;
+  font-weight: bolder;
+  background-color: orangered;
+  color: white;
+  width: 100%;
+  height: 100%;
+  padding: 10px;
+  border-radius: 10px;
+  border-style: unset;
+}
+/* -------------------------- body > footer (div) --------------------------- */
+.copyright-div {
+  order: 3;
+  background-color: darkcyan;
+  font-size: 20px;
+  padding-left: 3%;  
+}
